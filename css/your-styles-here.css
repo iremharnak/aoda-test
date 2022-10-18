@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+#navMenu {
+    display: none;
+    position: fixed;
+    left: 10px;
+    width: 10%;
+    height: 100%;
+    background-color: #0075BE;
+    top: 0;
+}
+#navMenu ul {
+    padding: 100px 18px;
+}
+#navMenu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+button {
+    cursor: pointer;
+}
+
+form div {
+    display: flex;
+    gap: 8px;
+}

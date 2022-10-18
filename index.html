@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta charset="utf-8">
+		<title>BMO - UI AODA Test</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/your-styles-here.css" />
+		<link rel="stylesheet" href="fonts/heebo.css" />
+	</head>
+	<body>
+		<div class="test-container">
+			<h1 class="test-heading">BMO Accessiblity Test for UI Devs</h1>
+			<header>
+				<h1 class="test-heading">Create an accessible navigation</h1>
+				<button id="menuTrigger" aria-expanded="false" aria-controls="navigationLinks" title="Open and Close Navigation">Show/Hide Nav</button>
+				<nav id="navMenu">
+					<ul>
+					<li><a href="#"><span>Home</span></a></li>
+					<li><a href="#"><span>About</span></a></li>
+					<li><a href="#"><span>Banking</span></a></li>
+					<li><a href="#"><span>Hockey</span></a></li>
+					<li><a href="#"><span>Good Food</span></a></li>
+					<li><a href="#"><span>UI Development</span></a></li>
+					<li><a href="#"><span>Contact</span></a></li>
+					</ul>
+				</nav>
+			</header>	
+			<main class="main-content" id="main-content">
+				<h1 class="test-heading">Create an accessible form</h1>
+				<h2 class="test-heading2">Text Inputs</h2>
+				<form action="">
+					<div>
+						<label type="text" for="name">Text Input:</label>
+						<input type="text" id="name" placeholder="Create Text Input with label">
+					</div>
+					<div>
+						<label type="number" for="number">Number:</label>
+						<input type="text" id="number" placeholder="Create a Number input with label">
+					</div>
+					<div>
+						<label type="text" for="email">Email:</label>
+						<input type="text" id="email" placeholder="Create an Email with label">
+					</div>
+					<h2 class="test-heading2">Radio Inputs</h2>
+					<input type="radio" id="introBtn" name="radio inputs" value="radioBtn"><span>create a group of alteast 3 radio inputs with labels</span>
+
+					<div>
+						<input type="radio" id="radioBtn1" name=" radio inputs" value="radioBtn1">
+						<label for="radio button 1" checked>Radio Button 1</label>
+						
+					</div>
+					<div>
+						<input type="radio" id="radioBtn2" name="radio inputs" value="radioBtn2">
+						<label for="radio button 2">Radio Button 2</label>
+					</div>
+					<div>
+						<input type="radio" id="radioBtn2" name="radio inputs" value="radioBtn2">
+						<label for="radio button 3">Radio Button 3</label>
+					</div>
+					<h2 class="test-heading2">Multiline Input</h2>
+					<div>
+						<label for="message">Multiline Input:</label>
+						<textarea name="text" id="message" placeholder="Create Multiline input with label" cols="30" rows="10"></textarea>
+						<!-- <input type="message" placeholder="Create Multiline input with label"> -->
+					</div>
+
+				</form>
+				
+
+				<h1 class="test-heading">Bonus Marks: Create an accessible modal with Keyboard Trap.(only if everything else is complete)</h1>
+				<button class="modal-trigger">Modal Trigger</button> 
+				<div class="modal">
+					<button >Close Modal</button>
+					<div class="modal-header">
+						<div>
+							<h1>This is a modal title 1</h1>
+						</div>
+					</div>
+					<div class="modal-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					</div>
+				</div>
+				<div class="overlay"></div>
+
+			</main>
+			<footer>
+				<h1 class="test-heading">footer</h1>
+			</footer>
+		</div>	
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="js/your-js-here.js"></script>
+	</body>	
+</html>
